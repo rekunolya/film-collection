@@ -1,0 +1,6 @@
+@use './shared/style/abstract/constants' as *;
+
+.main {
+  max-width: $content-width;
+  margin: 0 auto;
+}
