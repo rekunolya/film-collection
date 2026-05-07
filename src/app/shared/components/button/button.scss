@@ -1,0 +1,13 @@
+@use '../../../shared/style/abstract/placeholders' as *;
+
+button {
+  cursor: pointer;
+  padding: 1.5rem;
+  border: solid 2px currentColor;
+  color: currentColor;
+  border-radius: 5px;
+  font-size: 1.6rem;
+  background-color: inherit;
+  @extend %transition;
+  width: fit-content;
+}

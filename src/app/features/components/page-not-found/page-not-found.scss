@@ -1,0 +1,26 @@
+@use '../../../shared/style/abstract/constants' as *;
+@use '../../../shared/style/abstract/placeholders' as *;
+
+:host {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  color: $color-link-non-visited;
+  align-items: center;
+}
+
+
+app-button {
+  background-color: $color-button-not-found;
+  align-self: center;
+  & > button {
+    color: $color-link-non-visited;
+  }
+
+  &:hover {
+    background-color: $color-button-not-found-hover;
+  }
+}
