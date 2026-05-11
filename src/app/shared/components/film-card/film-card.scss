@@ -1,0 +1,44 @@
+@use '../../style/abstract/constants' as *;
+.film {
+  width: 300px;
+  border: 2px solid black;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  & > img {
+    width: stretch;
+    border-radius: 10px;
+  }
+
+  &__information {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0 1rem;
+  }
+
+  &__title {
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  &__meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.4rem;
+    align-items: center;
+
+    &:last-child {
+      padding-bottom: 1rem;
+    }
+  }
+
+  &__rating{
+    font-size: 2.0rem;
+    font-weight: bold;
+    color: $color-link-non-visited;
+  }
+}

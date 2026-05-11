@@ -1,0 +1,14 @@
+<div (click)="clickOnFilmCard()" class="film">
+  <img [src]="film().posterUrl" alt="film poster" />
+  <div class="film__information">
+    <p class="film__title">{{ film().title }}</p>
+    <div class="film__meta">
+      <p class="film__genre">{{ film().genre }}</p>
+      <p class="film__year">{{ film().year }}</p>
+    </div>
+    <div class="film__meta">
+      <p class="film__rating">{{ film().rating }}</p>
+      <button>Add to favorite</button>
+    </div>
+  </div>
+</div>
