@@ -1,0 +1,15 @@
+<app-button>&lt-Back</app-button>
+<div class="filmDetails">
+  <img src="{{filmDetails().posterUrl}}" alt="film poster">
+  <div class="filmDetails__information">
+    <div>
+      <p class="filmDetails__title">{{ filmDetails().title }} <span class="star"></span> </p>
+      <p class="filmDetails__rating">{{ filmDetails().rating }} </p>
+      <app-button>add to favorite</app-button>
+    </div>
+
+    <p class="filmDetails__genre">{{ filmDetails().genre }}</p>
+    <p class="filmDetails__duration"><span class="text">Duration: </span> {{ filmDetails().duration }}</p>
+    <p class="filmDetails__description"><span class="text">Description: </span> {{filmDetails().description}}</p>
+  </div>
+</div>

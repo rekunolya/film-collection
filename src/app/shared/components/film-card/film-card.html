@@ -8,7 +8,7 @@
     </div>
     <div class="film__meta">
       <p class="film__rating">{{ film().rating }}</p>
-      <button>Add to favorite</button>
+      <app-button class="favorite" (click)="addToFavorite()" [ngClass]="film().isFavorite ? 'favorite__selected' : ''"></app-button>
     </div>
   </div>
 </div>

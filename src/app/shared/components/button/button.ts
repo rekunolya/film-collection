@@ -7,7 +7,7 @@ import { Component, input } from '@angular/core';
   styleUrl: './button.scss',
 })
 export class Button {
-  textButton = input.required<string>();
+  //textButton = input.required<string>();
 
   buttonClick() {
     console.log('click button component');

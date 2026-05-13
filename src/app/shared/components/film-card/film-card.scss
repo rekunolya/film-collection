@@ -1,11 +1,19 @@
 @use '../../style/abstract/constants' as *;
+@use '../../style/abstract/placeholders' as *;
+
 .film {
   width: 300px;
-  border: 2px solid black;
+  border: 2px solid rgb(149, 148, 148);
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  cursor: pointer;
+  @extend %transition;
+
+  &:hover {
+    box-shadow: 0 5px 7px rgb(163, 159, 159);
+  }
 
   & > img {
     width: stretch;
@@ -23,6 +31,7 @@
     font-size: 1.6rem;
     font-weight: bold;
     text-transform: uppercase;
+    height: 30px;
   }
 
   &__meta {
@@ -41,4 +50,20 @@
     font-weight: bold;
     color: $color-link-non-visited;
   }
+}
+
+.favorite {
+  width: 25px;
+  height: 25px;
+  @extend %transition;
+  background-image: url('../../../../assests/images/favorite.svg');
+
+  &:hover {
+    background-image: url(../../../../assests/images/favorite_hover.svg);
+  }
+
+  &__selected {
+    background-image: url('../../../../assests/images/favorite_selected.svg');
+  }
+
 }

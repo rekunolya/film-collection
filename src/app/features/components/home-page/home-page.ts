@@ -19,4 +19,8 @@ export class HomePage {
 
   films = this.filmService.films;
 
+  openFilmDetail(id: number) {
+   console.log('click on film-card on home page', id);
+  }
+
 }

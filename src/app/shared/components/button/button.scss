@@ -11,3 +11,8 @@ button {
   @extend %transition;
   width: fit-content;
 }
+
+:host(.favorite) button {
+  border: none;
+  padding: 0; // если нужно
+}

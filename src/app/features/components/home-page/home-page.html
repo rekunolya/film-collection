@@ -1,10 +1,9 @@
-<p>home-page works!</p>
 <app-header title={{title()}}/>
 <app-bread-crumbs />
 <app-page-not-found />
 <div class="films-container">
   @for(film of films(); track film.id) {
-    <app-film-card [film]="film"></app-film-card>
+    <app-film-card [film]="film" (filmId)="openFilmDetail($event)"></app-film-card>
   }
 </div>
 

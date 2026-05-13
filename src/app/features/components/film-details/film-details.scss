@@ -1,0 +1,19 @@
+@use '../../../shared/style/abstract/constants' as *;
+
+.filmDetails{
+  display: flex;
+  gap: 2rem;
+}
+
+.star {
+  width: 25px;
+  height: 25px;
+
+  &__normal {
+    background-image: url('../../../../assests/images/star.svg');
+  }
+
+  &__best {
+    background-image: url('../../../../assests/images/star_best.svg');
+  }
+}
