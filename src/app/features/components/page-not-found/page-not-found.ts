@@ -12,7 +12,7 @@ export class PageNotFound {
   private route = inject(Router);
 
   goToMainPage() {
-    console.log('clicked button on the page not found')
+    //console.log('clicked button on the page not found')
     this.route.navigate(['/home'])
   }
 }
