@@ -1,7 +1,7 @@
 <main class="main">
-  <div class="content">
-    <app-home-page title="{{title()}}"/>
-  </div>
-</main>
+  <app-header title="{{ title() }}" />
+  <app-bread-crumbs />
 
-<router-outlet />
+  <router-outlet />
+  <app-footer />
+</main>

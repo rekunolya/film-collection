@@ -1,10 +1,12 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { HomePage } from './features/components/home-page/home-page';
+import { Header } from './features/components/header/header';
+import { BreadCrumbs } from './features/components/bread-crumbs/bread-crumbs';
+import { Footer } from './features/components/footer/footer';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, HomePage],
+  imports: [RouterOutlet, Header, BreadCrumbs, Footer],
   templateUrl: './app.html',
   styleUrl: './app.scss',
 })
