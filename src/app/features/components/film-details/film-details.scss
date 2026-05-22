@@ -2,7 +2,37 @@
 
 .filmDetails{
   display: flex;
-  gap: 2rem;
+  gap: 3rem;
+  font-size: 2.0rem;
+
+  & > img {
+    border-radius: 10px;
+    box-shadow: 1px 2px 5px $color-shadow;
+  }
+
+  &__information {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  &__title {
+    font-size: 3.6rem;
+    font-weight: bold;
+  }
+
+  &__genre {
+    padding: 10px;
+    width: fit-content;
+    background-color: $color-text-background;
+    border-radius: 10px;
+    box-shadow: 1px 2px 5px $color-shadow;
+  }
+
+  &__description {
+    width: 70%;
+    line-height: 1.5;
+  }
 }
 
 .star {
@@ -16,4 +46,9 @@
   &__best {
     background-image: url('../../../../assests/images/star_best.svg');
   }
+}
+
+.text{
+  font-size: 2.2rem;
+  font-weight: bold;
 }

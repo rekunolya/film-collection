@@ -7,4 +7,8 @@ import { getFilms } from '../../../assests/films';
 })
 export class FilmsService {
   films = signal<Film[]>(getFilms());
+
+  getFilmById(id:number) {
+    return this.films().find(film => film.id === id) ?? null;
+  }
 }

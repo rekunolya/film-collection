@@ -13,9 +13,9 @@ export class FilmCard {
   film = input.required<Omit<Film, 'description' | 'duration'>>();
   filmId= output<number>();
 
-  clickOnFilmCard(){
+  openFilmCard(){
     this.filmId.emit(this.film().id);
-    //console.log('click card', this.film().id);
+    console.log('click card', this.film().id);
   }
 
   addToFavorite() {
