@@ -8,7 +8,7 @@
     </div>
 
     <p class="filmDetails__genre">{{ filmDetails()?.genre }}</p>
-    <p class="filmDetails__duration"><span class="text">Duration: </span> {{ filmDetails()?.duration }}</p>
+    <p class="filmDetails__duration"><span class="text">Duration: </span> {{ filmDetails()?.duration | timeTransform}}</p>
     <p class="filmDetails__description"><span class="text">Description: </span> {{filmDetails()?.description}}</p>
     <p class="filmDetails__rating">{{ filmDetails()?.rating }} </p>
   </div>

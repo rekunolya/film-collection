@@ -3,10 +3,11 @@ import { Film } from '../../../shared/interfaces/film-interface';
 import { Button } from '../../../shared/components/button/button';
 import { ActivatedRoute, Router } from '@angular/router';
 import { FilmsService } from '../../../shared/services/films-service';
+import { TimeTransformPipe } from '../../../shared/pipes/time-transform-pipe';
 
 @Component({
   selector: 'app-film-details',
-  imports: [Button],
+  imports: [Button, TimeTransformPipe],
   templateUrl: './film-details.html',
   styleUrl: './film-details.scss',
 })
